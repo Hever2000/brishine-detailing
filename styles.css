@@ -1,0 +1,509 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #18181b;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: #18181b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.logo {
+  max-width: 110px;
+}
+
+.inicio a {
+  color: white;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.inicio {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.inicio a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: all 0.5s ease;
+}
+
+.inicio a:hover::after {
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid red;
+  min-width: 120px;
+  height: 50px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: red;
+  transition-timing-function: ease-in;
+  transition-duration: 0.2s;
+}
+
+.container-inicio {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px red;
+  z-index: -100;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+ 
+}
+
+
+header .content-inicio h4 {
+  margin-bottom: 2rem;
+  color: #ccc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+header .content-inicio h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  min-width: 100px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+header .content-inicio h1 span {
+  color: red;
+}
+
+header .content-inicio p {
+  margin: 1rem auto;
+  text-align: center;
+  max-width: 600px;
+  color: #ccc;
+
+  
+}
+
+header .img-logo {
+  position: relative;
+  display: block;
+  margin: 100px auto;
+}
+
+header .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+.button-menu-icon {
+  min-width: 70px;
+}
+
+.button-menu-icon,
+.button-cerrar-menu {
+  display: none;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  gap: 3rem;
+  flex-wrap: wrap;
+  flex-flow: row;
+  margin: 1rem auto;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.redes a {
+  color: red;
+  font-size: 4rem;
+  min-width: 6rem;
+  min-height: 6rem;
+  border: 1px solid red;
+  text-align: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 800px) {
+  .button-menu-icon,
+  .button-cerrar-menu {
+    display: block;
+  }
+
+  .button-menu-icon {
+    font-size: x-large;
+    border: none;
+    font-weight: 300;
+    max-width: 100px;
+  }
+
+  .button-cerrar-menu {
+    color: #fff;
+    margin-top: 40px;
+    font-size: x-large;
+    border: none;
+    font-weight: 300;
+    max-width: 200px;
+  }
+
+  .inicio {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .inicio.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #18181b;
+    padding: 2rem 2rem 100rem 2rem;
+    box-shadow: 0 0 0 100vmax #000a;
+    min-height: 100%;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.container-skills {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.container-skills {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+section .header-skills {
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.features .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.features .card span {
+  display: inline-block;
+  background-color: red;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.features .card h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.features .card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.features .card a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.features .card a:hover {
+  color: red;
+}
+
+.container-sobre-mi {
+  background-image: url("./imagenes/yo-gaming.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: center;
+}
+
+.fondo-negro-sobre-mi {
+  padding: 5rem 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: #000a;
+}
+
+.contenido {
+  background-color: #27272a;
+  border-radius: 19px;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 40px 0 #0008;
+}
+
+.contenido p {
+  color: #ccc;
+  margin: 10px;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contenido img {
+  border-radius: 100%;
+  max-height: 250px;
+  max-width: 250px;
+  margin: auto;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 40px 0 #9998;
+}
+
+.section-educacion {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.container-educacion {
+  margin-top: 4rem;
+  gap: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; /* Alinea los divs horizontalmente al centro */
+}
+
+.div-educacion {
+  background-color: #27272a;
+  border-radius: 19px;
+  width: 300px;
+  min-height: 400px;
+  margin: 2rem;
+}
+
+.div-educacion img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.div-educacion p {
+  color: #ccc;
+  margin: 20px;
+  font-size: x-large;
+  text-align: center;
+}
+
+.sub-header {
+  min-width: 400px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.section-footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+footer .column .logo {
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+
+footer .column p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+footer .column .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .column .socials a {
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+
+footer .column h4 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer .column > a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column > a:hover {
+  color: red;
+}
+
+.copyright {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (width < 900px) {
+  .nav-links {
+    display: none;
+  }
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .image {
+    grid-area: 1/1/2/2;
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (width < 600px) {
+  header .image::before {
+    display: none;
+  }
+
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    grid-template-columns: 1fr 150px;
+  }
+}
