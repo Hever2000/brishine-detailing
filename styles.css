@@ -37,7 +37,7 @@ nav {
 }
 
 .logo {
-  max-width: 110px;
+  max-width: 13rem;
 }
 
 .inicio a {
@@ -197,6 +197,14 @@ header .image img {
 
 
 @media screen and (max-width: 800px) {
+  .logo {
+    max-width: 7rem;
+  }
+
+  .contactame-button {
+    max-width: fit-content;
+    font-size: 0.8rem;
+  }
   header .content-inicio h1 {
     font-size: 4rem;
   }
@@ -349,17 +357,33 @@ section .header-skills {
   margin: auto;
   margin-top: 3rem;
   padding: 10px;
-  max-width: 600px;
+  max-width: fit-content;
   box-shadow: 0 0 40px 0 #0008;
 }
 
  .contenido p {
   color: #ccc;
-  margin: 10px;
+  margin: auto;
   font-size: 25px;
   padding: 20px;
   text-align: center;
   line-height: 1.5;
+  max-width: 500px;
+}
+
+h3 {
+  color: #fff;
+  margin: 10px;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+.contenido iframe {
+  margin: auto;
 }
 
 .contenido img {
