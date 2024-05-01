@@ -396,6 +396,11 @@ header .image img {
     opacity: 1;
     visibility: visible;
   }
+
+  .form-container {
+    min-width: 30rem;
+  }
+
   div .contenido p {
     font-size: 1.1rem;
     text-align: center;
