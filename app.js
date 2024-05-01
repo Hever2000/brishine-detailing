@@ -62,10 +62,23 @@ cerrar.addEventListener("click", () => {
 });
 
 
-import EmblaCarousel from 'embla-carousel'
 
-const emblaNode = document.querySelector('.embla')
-const options = { loop: false }
-const emblaApi = EmblaCarousel(emblaNode, options)
 
-console.log(emblaApi.slideNodes()) // Access API
+document.getElementById("contactame").addEventListener("click", function () {
+  var div = document.getElementById("form");
+  var overlay = document.getElementById("overlay");
+  if (div.style.display === "none") {
+    div.style.display = "block"; // Mostrar el div
+    overlay.style.display = "block";
+  } else {
+    div.style.display = "none"; // Ocultar el div
+    overlay.style.display = "none"; // Ocultar el fondo oscurecido
+  }
+});
+
+document.getElementById("closeBtn").addEventListener("click", function () {
+  var div = document.getElementById("form");
+  var overlay = document.getElementById("overlay");
+  div.style.display = "none";
+  overlay.style.display = "none";
+});
