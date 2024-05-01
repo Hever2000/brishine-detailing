@@ -82,3 +82,12 @@ document.getElementById("closeBtn").addEventListener("click", function () {
   div.style.display = "none";
   overlay.style.display = "none";
 });
+
+
+function datosForm () {
+  let datos = {
+    email: document.getElementById("email").value,
+    mensaje: document.getElementById("mensaje").value,
+  }
+  console.log(datos);
+}
