@@ -191,6 +191,9 @@ header .image img {
   border-color: #ff1347;
 }
 
+.card h4{
+  margin: 1rem 0;
+}
 .form-container {
   background: linear-gradient(to bottom, #000000,#120000) padding-box,
     linear-gradient(145deg, red, #ff1347) border-box;
@@ -561,6 +564,13 @@ header .image img {
     max-height: 25rem;
     text-align: center;
   }
+
+  .section-educacion .container-educacion .div-educacion p {
+    color: #ccc;
+    margin: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
 .container-skills {
@@ -698,7 +708,7 @@ h3 {
 .section-educacion {
   max-width: 1200px;
   margin: auto;
-  padding: 5rem 2rem;
+  padding: 5rem 0rem;
 }
 
 .container-educacion {
@@ -712,17 +722,20 @@ h3 {
 .div-educacion {
   background-color: #27272a;
   border-radius: 19px;
-  width: 300px;
-  min-height: 400px;
+  min-width: 20rem;
+  min-height: 45rem;
+  max-width: 30rem;
+  max-height: 45rem;
   margin: 2rem;
+  overflow: hidden;
 }
 
 .div-educacion img {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 15rem;
   margin: auto;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 2rem;
   object-fit: cover;
 }
 
