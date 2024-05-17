@@ -191,11 +191,11 @@ header .image img {
   border-color: #ff1347;
 }
 
-.card h4{
+.card h4 {
   margin: 1rem 0;
 }
 .form-container {
-  background: linear-gradient(to bottom, #000000,#120000) padding-box,
+  background: linear-gradient(to bottom, #000000, #120000) padding-box,
     linear-gradient(145deg, red, #ff1347) border-box;
   border: 2px solid transparent;
   font-family: inherit;
@@ -215,7 +215,7 @@ header .image img {
   z-index: 9999;
   top: 0;
   bottom: 0;
-  left:0;
+  left: 0;
   right: 0;
 }
 
@@ -402,7 +402,7 @@ header .image img {
   }
 
   .form-container {
-    background: linear-gradient(to bottom, #000000,#120000) padding-box,
+    background: linear-gradient(to bottom, #000000, #120000) padding-box,
       linear-gradient(145deg, red, #ff1347) border-box;
     border: 2px solid transparent;
     font-family: inherit;
@@ -422,10 +422,10 @@ header .image img {
     z-index: 9999;
     top: 0;
     bottom: 0;
-    left:0;
+    left: 0;
     right: 0;
   }
-  
+
   .form .close {
     position: absolute;
     top: 10px;
@@ -435,11 +435,11 @@ header .image img {
     font-size: 2rem;
     margin: 0rem 1rem;
   }
-  
+
   .close:hover {
     color: red; /* Cambiar el color al pasar el mouse */
   }
-  
+
   .overlay {
     display: none;
     position: fixed;
@@ -450,7 +450,7 @@ header .image img {
     background-color: #000a; /* Fondo oscurecido */
     z-index: 1000; /* Asegurar que esté detrás del div visible */
   }
-  
+
   .form-container .form {
     margin: 15% 5%;
     justify-content: center;
@@ -458,7 +458,7 @@ header .image img {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .form-container .form-group {
     display: flex;
     flex-direction: column;
@@ -466,21 +466,21 @@ header .image img {
     min-width: max-content;
     min-height: max-content;
   }
-  
+
   .form-container .form-group label {
     display: block;
     color: #717171;
     font-weight: 600;
     font-size: 1.5rem;
   }
-  
+
   .form span {
     color: #ff1347;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
   }
-  
+
   .form-container .form-group input {
     width: 100%;
     border-radius: 8px;
@@ -488,7 +488,7 @@ header .image img {
     background-color: transparent;
     border: 1px solid #414141;
   }
-  
+
   .form-container .form-group textarea {
     width: 100%;
     height: 10rem;
@@ -519,8 +519,6 @@ header .image img {
     align-items: center;
     padding: 1rem 2rem;
   }
-
-
 
   div .contenido p {
     font-size: 1.1rem;
@@ -592,6 +590,11 @@ section .header-skills {
   font-weight: 600;
 }
 
+.card img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
 .features {
   margin-top: 4rem;
   display: grid;
@@ -706,8 +709,6 @@ h3 {
 }
 
 .section-educacion {
-  
-  
   padding: 5rem 0rem;
 }
 

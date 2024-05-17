@@ -61,9 +61,6 @@ cerrar.addEventListener("click", () => {
   lista.classList.remove("visible");
 });
 
-
-
-
 document.getElementById("contactame").addEventListener("click", function () {
   var div = document.getElementById("form");
   var overlay = document.getElementById("overlay");
@@ -83,11 +80,10 @@ document.getElementById("closeBtn").addEventListener("click", function () {
   overlay.style.display = "none";
 });
 
-
-function datosForm () {
+function datosForm() {
   let datos = {
     email: document.getElementById("email").value,
     mensaje: document.getElementById("mensaje").value,
-  }
+  };
   console.log(datos);
 }
