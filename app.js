@@ -35,14 +35,14 @@ sr.reveal(".container-inicio", {
   scale: 0.8,
 });
 
-sr.reveal(".container-skills", {
+sr.reveal(".container-productos", {
   duration: 2000,
   origin: "bottom",
   distance: "-100px",
   scale: 0.8,
 });
 
-sr.reveal(".section-educacion", {
+sr.reveal(".section-servicios", {
   duration: 2000,
   origin: "top",
   distance: "-100px",
